@@ -1,1 +1,2 @@
-React Weather Application
+# ReactWeather
+A weather query by city application via using ReactJs

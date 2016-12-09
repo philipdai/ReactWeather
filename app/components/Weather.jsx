@@ -19,7 +19,7 @@ let React = require('react'),
       let {errorMessage, isLoading, temp, location} = this.state;
       function renderMessage() {
         if (isLoading) {
-          return <h3>Fetching weather...</h3>
+          return <h3 className="text-center">Fetching weather...</h3>
         } else if (errorMessage.length === 0) {
           return <WeatherMessage location={location} temp={temp}/>;
         } else {
@@ -29,7 +29,7 @@ let React = require('react'),
 
       return (
         <div>
-          <h3>Weather Component</h3>
+          <h1 className="text-center">Gett Weather</h1>
           <WeatherForm onSearch={this.handleSearch}/>
           {renderMessage()}
         </div>
